@@ -1,0 +1,46 @@
+@import "./../node_modules/bootstrap/scss/bootstrap";
+
+$custom-body-bg:#f2f2f2;
+
+$custom-primary:#3292a6;
+$custom-primary-overlay:rgba(50,146,166,0.7);
+
+body{background:$custom-body-bg;margin-top:105px;}
+
+.custom-primary{background:$custom-primary;}
+.custom-primary-overlay{background:$custom-primary-overlay;}
+
+.navbar
+{
+	box-shadow:2px 2px 5px $custom-primary;opacity:0.9;background:#fff;
+	
+	.nav-item{font-size:1.4rem;padding-right:1.4rem;}
+	
+}
+
+section#showcase
+{
+	position:relative;background:url(../assets/mountains.jpg);min-height:600px;
+	
+	.custom-primary-overlay{position:absolute;left:0;top:0;width:100%;height:100%;}
+}
+
+.info-header{width:50%;margin:auto;border-bottom:1px solid #ddd;}
+
+section#authors
+{
+	img{margin-top:-50px;}
+	.card:hover{background:$custom-primary;color:#fff;
+	.text-muted{color:#fff !important;}
+	.fab{color:#fff;}
+	}
+}
+
+@media(max-width:768px){
+	section#showcase
+	{
+		min-height:500px;
+		h1{font-size:3.6rem;}
+	}
+	.mb-resp{margin-bottom:1rem;}
+}
